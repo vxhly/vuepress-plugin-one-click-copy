@@ -1,0 +1,24 @@
+{
+  "name": "vuepress-plugin-one-click-copy",
+  "version": "1.0.0",
+  "description": "A vuepress plugin for clipboard-copy",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vxhly/vuepress-plugin-one-click-copy.git"
+  },
+  "keywords": [
+    "vuepress",
+    "plugin",
+    "clipboard-copy",
+    "vuepress-one-click-copy",
+    "copy",
+    "one-click-copy"
+  ],
+  "author": "vxhly <pengchengou@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vxhly/vuepress-plugin-one-click-copy/issues"
+  },
+  "homepage": "https://github.com/vxhly/vuepress-plugin-one-click-copyy#readme"
+}
