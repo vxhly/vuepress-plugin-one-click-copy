@@ -3,10 +3,21 @@ const {
 } = require('path')
 
 module.exports = (options, context) => ({
-  define: {
-    COPY_SELECTOR: options.copy_selector || ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'],
-    COPY_MESSAGE: options.copy_message || 'Copy successfully and then paste it for use.',
-    DURATION: options.duration || 3000
+  define() {
+    const {
+      copySelector,
+      copyMessage,
+      duration,
+      showInMobile
+    } = options
+
+    return {
+      COPY_SELECTOR: copySelector || ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'],
+      COPY_MESSAGE: copyMessage || 'Copy successfully and then paste it for use.',
+      DURATION: duration || 3000,
+      SHOW_IN_MOBILE: showInMobile || false
+    }
   },
+
   clientRootMixin: resolve(__dirname, './bin/clientRootMixin.js')
 })

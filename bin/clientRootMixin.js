@@ -3,11 +3,21 @@ import Message from './Message'
 
 export default {
   mounted() {
-    this.updateCopy()
+    const isMobile = !!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+    if (!isMobile && !SHOW_IN_MOBILE) {
+      this.updateCopy()
+    }
   },
 
   updated() {
-    this.updateCopy()
+    const isMobile = !!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+    if (!isMobile && !SHOW_IN_MOBILE) {
+      this.updateCopy()
+    }
   },
 
   methods: {
