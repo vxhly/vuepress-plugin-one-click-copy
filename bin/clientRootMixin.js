@@ -6,7 +6,7 @@ export default {
     const isMobile = !!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
     );
-    if (!isMobile && !SHOW_IN_MOBILE) {
+    if (!isMobile) {
       this.updateCopy()
     }
   },
@@ -15,7 +15,7 @@ export default {
     const isMobile = !!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
     );
-    if (!isMobile && !SHOW_IN_MOBILE) {
+    if (!isMobile) {
       this.updateCopy()
     }
   },
