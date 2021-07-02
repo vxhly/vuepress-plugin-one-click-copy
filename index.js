@@ -7,8 +7,7 @@ module.exports = (options, context) => ({
     const {
       copySelector,
       copyMessage,
-      duration,
-      showInMobile
+      duration
     } = options
 
     return {
