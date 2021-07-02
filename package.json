@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-one-click-copy",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A vuepress plugin for clipboard-copy",
   "main": "index.js",
   "repository": {
