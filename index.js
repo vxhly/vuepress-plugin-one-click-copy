@@ -12,7 +12,7 @@ module.exports = (options, context) => ({
 
     return {
       COPY_SELECTOR: copySelector || ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'],
-      COPY_MESSAGE: copyMessage || 'Copy successfully and then paste it for use.',
+      COPY_MESSAGE: copyMessage || 'Copied successfully!',
       DURATION: duration || 3000
     }
   },
