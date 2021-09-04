@@ -34,7 +34,8 @@ This plugin supports the following configurations.
 module.exports = {
   plugins: ['one-click-copy', {
     copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
-    copyMessage: 'Copy successfully and then paste it for use.', // default is 'Copy successfully and then paste it for use.'
+    copyMessage: 'Copied successfully!', // default is 'Copied successfully!'
+    toolTipMessage: 'Copy to clipboard', // default is ''Copy to clipboard'
     duration: 300, // prompt message display time
   }]
 }
